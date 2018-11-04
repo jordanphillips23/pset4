@@ -166,7 +166,7 @@ public class ProblemSet4 {
 	
 		for (int i = 0; i < str.length(); i++) {
 			
-			if (str.charAt(i) == ' ') {
+			if (Character.isWhitespace(str.charAt(i))) {
 				return -1;
 			}
 			if (digits) {
