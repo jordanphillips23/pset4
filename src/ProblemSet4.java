@@ -29,7 +29,7 @@ public class ProblemSet4 {
 		System.out.println(ps4.endsMeet(null, 2));
 		System.out.println(ps4.middleMan(null));
 		System.out.println(ps4.doubleVision(null));
-		System.out.println(ps4.centered(null , null));
+		System.out.println(ps4.centered("baby" , "aby"));
 		System.out.println(ps4.upOrDown(1.5, 'l'));
 		System.out.println(ps4.countMe(null, 'l'));
 		System.out.println(ps4.triplets(null));
@@ -59,7 +59,7 @@ public class ProblemSet4 {
 	}
 	
 	public String middleMan(String str) {
-		if (str == (null)|| (str.length() % 2) == 0) {
+		if (str == (null)|| (str.length() % 2) == 0 || str.length() < 3) {
 			return null;
 		}
 		return str.substring((str.length() / 2) - 1 , (str.length() / 2) + 2);
